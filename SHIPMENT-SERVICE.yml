@@ -14,8 +14,11 @@ spring:
   h2:
     console:
       enabled: true
-      #http://localhost:8082/api/h2-console/
+  zipkin:
+    baseUrl: http://localhost:9411
 server:
   port: 8082
   servlet:
     context-path: /api
+logging:
+  file: /Users/mukeshkumar/development/logs/shipment-service.log

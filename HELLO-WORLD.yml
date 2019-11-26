@@ -14,3 +14,12 @@ spring:
       enabled: true
       #http://localhost:8080/h2-console/
 greeting: Hello
+
+management:
+  endpoint:
+    metrics:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
